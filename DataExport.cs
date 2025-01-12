@@ -3,12 +3,9 @@ using App = HostMgd.ApplicationServices;
     using Db = Teigha.DatabaseServices;
     using Ed = HostMgd.EditorInput;
     using Rtm = Teigha.Runtime;
-using System.Diagnostics;
 using PRPR_METHODS;
-using System.Linq.Expressions;
 using Multicad;
-using System.Collections.Generic;
-using PrPr_exportDataToDoc_WinApp;
+using PrPr_exportDataToDoc;
 
 [assembly: Rtm.CommandClass(typeof(Tools.CadCommand))]
 
@@ -23,15 +20,10 @@ namespace Tools
             #region INIT
             public void Initialize()
             {
-                //think добавить проверку есть ли doc
+               App.DocumentCollection dm = App.Application.DocumentManager;
+               Ed.Editor ed = dm.MdiActiveDocument.Editor;
 
-                App.DocumentCollection dm = App.Application.DocumentManager;
-
-
-                Ed.Editor ed = dm.MdiActiveDocument.Editor;
-                    //ed.WriteMessage("\nStart list of commands: \n");
-                string sCom =
-                    "dataexport" + "\tэкспорт данных из объектов nanoCAD";
+                string sCom = "dataexport" + "\tэкспорт данных из объектов nanoCAD";
                 ed.WriteMessage(sCom);
 
             }

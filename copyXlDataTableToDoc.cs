@@ -12,7 +12,7 @@ using wordTable = DocumentFormat.OpenXml.Wordprocessing.Table;
 using wordText = DocumentFormat.OpenXml.Wordprocessing.Text;
 using wordRun = DocumentFormat.OpenXml.Wordprocessing.Run;
 
-namespace PrPr_exportDataToDoc_WinApp
+namespace PrPr_exportDataToDoc
 {
     /// <summary>
     /// Класс копирует данные из xlsx файла в docx.

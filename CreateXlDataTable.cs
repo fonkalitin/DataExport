@@ -9,7 +9,7 @@ using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Spreadsheet;
 
-namespace PrPr_exportDataToDoc_WinApp
+namespace PrPr_exportDataToDoc
 {
     public class CreateXlDataTable
     {

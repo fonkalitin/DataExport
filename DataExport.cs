@@ -34,9 +34,6 @@ namespace Tools
                     "dataexport" + "\tэкспорт данных из объектов nanoCAD";
                 ed.WriteMessage(sCom);
 
-#if DEBUG
-                //для отладки список команд
-#endif
             }
 
             public void Terminate()

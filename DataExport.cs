@@ -38,14 +38,14 @@ namespace Tools
 
             public void Terminate()
             {
-                // throw new System.NotImplementedException();
+
             }
 
             #endregion
 
 
             /// <summary>
-            /// запуск ссылок
+            /// экспорт данных
             /// </summary>
             [Rtm.CommandMethod("dataexport", Rtm.CommandFlags.Session)]
             public void dataexport()
